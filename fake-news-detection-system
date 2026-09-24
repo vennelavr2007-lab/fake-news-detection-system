@@ -1,0 +1,27 @@
+print(" Fake News Detection System ")
+news = input("Enter a news statement: ").lower()
+fake_words = [
+    "shocking",
+    "miracle",
+    "100% true",
+    "you won't believe",
+    "secret",
+    "click here"
+]
+is_fake = False
+for word in fake_words:
+    if word in news:
+        is_fake = True
+        break
+print("\n Result ")
+if is_fake:
+    print("Warning: This news may be FAKE.")
+else:
+    print("This news appears to be NORMAL.")
+
+ OUTPUT:
+ Fake News Detection System 
+Enter a news statement: You won't believe this shocking secret!
+
+ Result 
+Warning: This news may be FAKE.
